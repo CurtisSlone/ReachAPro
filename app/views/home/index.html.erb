@@ -4,18 +4,18 @@
     <p style="text-align: center;">A network of pros here to help you and your baby...</p>
     <%= simple_form_for '/ask' do |f| %>
       <div class="row">
-          <%= f.error_notification %>
-          <div class="col-md-7 col-md-offset-2">
-            <%= f.input :body, placeholder: 'Got a baby? Got a question?', label: false  %>
-          </div>
-          <div class="col-md-1">
-            <%= f.button :submit, "Ask!", class: "btn btn-success pull-right" %>
+        <div class="">
+          <div class="center-block form-inline">
+            <%= f.error_notification %>
+            <%= f.input :body, placeholder: 'Got a baby? Got a question?', input_html: {class: "input-lg"}, label: false  %>
+            <%= f.button :submit, "Ask!", class: "btn btn-lg btn-success" %>
           </div>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>
+
 
 <div class="container">
   <h1>Testimonials</h1>
