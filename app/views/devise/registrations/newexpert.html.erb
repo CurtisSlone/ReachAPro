@@ -26,6 +26,10 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+<div class="field">
+    <%= f.label :specialty %><br/>
+    <%= f.text_field :specialty, placeholder: "Your pediatric specialty" %>
+</div>
 <div class="field hidden"> 
     <%= f.text_field :expert, value: true %>
 </div>
