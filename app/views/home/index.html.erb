@@ -1,4 +1,55 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="jumbotron">
+  <div class="container">
+    <h1 style="text-align: center;">Reach A Pro</h1>
+    <p style="text-align: center;">A network of pros here to help you and your baby...</p>
+    <%= simple_form_for '/ask' do |f| %>
+      <div class="row">
+          <%= f.error_notification %>
+          <div class="col-md-7 col-md-offset-2">
+            <%= f.input :body, placeholder: 'Got a baby? Got a question?', label: false  %>
+          </div>
+          <div class="col-md-1">
+            <%= f.button :submit, "Ask!", class: "btn btn-success pull-right" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-<h1>This is Tim's great banner</h1>
+<div class="container">
+  <h1>Testimonials</h1>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Mary N - Peoria, Il.</h3>
+        </div>
+        <div class="panel-body">
+          "Reach A Pro sure saved the day for me and my baby! What would I have done without Reach A Pro?"
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Shirley T. - Busco, SC.</h3>
+        </div>
+        <div class="panel-body">
+          "Ya'll plain won't believe all the know how and expertice these pros got! Clean'd my baby up right."
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Curtis S. - San Onofree, CA</h3>
+        </div>
+        <div class="panel-body">
+          "I don't have a baby yet, but when I do, I'll be sure to use Reach A Pro! Gee I can't wait for a baby..."
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

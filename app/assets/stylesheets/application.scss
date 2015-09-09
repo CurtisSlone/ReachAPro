@@ -1,2 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.jumbotron form {
+  width: 100%;
+  padding: 10px;
+}
+
+.jumbotron input {
+  font-size: 1.5em;
+  height: 50px;
+  width: 500px;
+}
+
+.jumbotron input[type="submit"] {
+  width: 100px;
+  margin: 0 0 10px 0;
+}
