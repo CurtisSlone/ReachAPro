@@ -4,18 +4,18 @@
     <p style="text-align: center;">A network of pros here to help you and your baby...</p>
     <%= simple_form_for '/ask' do |f| %>
       <div class="row">
-          <%= f.error_notification %>
-          <div class="col-md-7 col-md-offset-2">
-            <%= f.input :body, placeholder: 'Got a baby? Got a question?', label: false  %>
-          </div>
-          <div class="col-md-1">
-            <%= f.button :submit, "Ask!", class: "btn btn-success pull-right" %>
+        <div class="">
+          <div class="center-block form-inline">
+            <%= f.error_notification %>
+            <%= f.input :body, placeholder: 'Got a baby? Got a question?', input_html: {class: "input-lg"}, label: false  %>
+            <%= f.button :submit, "Ask!", class: "btn btn-lg btn-success" %>
           </div>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>
+
 
 <div class="container">
   <h1>Testimonials</h1>
@@ -24,10 +24,10 @@
     <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Mary N - Peoria, Il.</h3>
+          <h3 class="panel-title">Mary N. - Peoria, Il.</h3>
         </div>
         <div class="panel-body">
-          "Reach A Pro sure saved the day for me and my baby! What would I have done without Reach A Pro?"
+          <p>"Reach A Pro sure saved the day for me and my baby! What would I have done without Reach A Pro?"</p>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
           <h3 class="panel-title">Shirley T. - Busco, SC.</h3>
         </div>
         <div class="panel-body">
-          "Ya'll plain won't believe all the know how and expertice these pros got! Clean'd my baby up right."
+          <p>"Ya'll plain won't believe all the know how and expertice these pros got! Clean'd my baby up right."</p><br />
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
           <h3 class="panel-title">Curtis S. - San Onofree, CA</h3>
         </div>
         <div class="panel-body">
-          "I don't have a baby yet, but when I do, I'll be sure to use Reach A Pro! Gee I can't wait for a baby..."
+          <p>"I don't have a baby yet, but when I do, I'll be sure to use Reach A Pro! Gee I can't wait for a baby..."</p><br />
         </div>
       </div>
     </div>
