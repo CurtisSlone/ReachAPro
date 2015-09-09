@@ -7,6 +7,8 @@
   <%= f.input :last_name %>
   <%= f.input :email %>
   <%= f.input :child_age_group, priority: ['0-6 months'], collection: ['0-6 months', '7-12 months', '13-18 months', '18-24 months', '24 months+'] %>
+  <%= f.input :child_gender, collection: ['Female', 'Male'] %>
+
   <% if @minimum_password_length %>
   <em>(<%= @minimum_password_length %> characters minimum)</em>
   <% end %><br />
