@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   def create
     @ticket = Ticket.new(ticket_params)
-    @user = User.new(first_name: "Guest", last_name: "User")
+    @user = User.new(first_name: "Guest", last_name: "User", email: "guest-#{Time.now.to_i}@email.com")
     @user.save!(:validate => false)
 
     @ticket.user_id = @user.id
