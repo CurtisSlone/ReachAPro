@@ -1,0 +1,28 @@
+<div class="container">
+
+<div class="row">
+  <div class="col-lg-10">
+
+<table class="table">
+     <thead>
+       <tr>
+         <th>Subject</th>
+         <th>Creator</th>
+         <th>View</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <% @tickets.each do |ticket| %>
+         <td><%= ticket.subject %></td>
+         <td><%= "#{ticket.user.first_name}" "#{ticket.user.last_name}" %></td>
+         <td><%= link_to "View", ticket_path(ticket) %></td>
+         <% end %>
+       </tr>
+     </tbody>
+   </table>
+
+</div>
+</div>
+
+</div>
