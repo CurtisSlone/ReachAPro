@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'questions/index'
+
+  get 'questions/create'
+
+  post 'ask' => 'questions#create'
+  
   resources :tickets
   devise_for :users
   root 'home#index'
