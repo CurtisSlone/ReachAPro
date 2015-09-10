@@ -2,7 +2,7 @@
   <div class="container">
     <h1 style="text-align: center;">Reach A Pro</h1>
     <p style="text-align: center;">A network of pros here to help you and your baby...</p>
-    <%= simple_form_for '/ask' do |f| %>
+    <%= simple_form_for @ticket, url: ask_path, html: {method: :post} do |f| %>
       <div class="row">
         <div class="">
           <div class="center-block form-inline">

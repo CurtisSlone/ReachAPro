@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
-  before_action :authenticate_user!
 
   def index
+    @ticket = Ticket.new
   end
 
   private
