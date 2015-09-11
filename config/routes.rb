@@ -1,16 +1,25 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'questions/index'
 
   get 'questions/create'
 
   post 'ask' => 'questions#create'
   
+=======
+  devise_for :experts
+>>>>>>> feat/expertmodel
   resources :tickets
   devise_for :users
   root 'home#index'
 
+<<<<<<< HEAD
   get '/dashboard', to: 'expert_dashboard#index'
 
+=======
+
+   
+>>>>>>> feat/expertmodel
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
